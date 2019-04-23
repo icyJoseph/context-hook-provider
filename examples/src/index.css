@@ -1,0 +1,64 @@
+.example-section {
+  margin: 1em 0;
+}
+
+.example-container {
+  padding: 1em;
+}
+
+.code-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.example-counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2em;
+}
+
+.example-counter > div {
+  display: flex;
+}
+
+.example-counter > div > button {
+  margin: 0.25em 0.5em;
+  min-width: 50px;
+  max-width: 50px;
+  text-align: center;
+}
+
+.external-links {
+  color: white;
+}
+
+.external-links > a {
+  margin: 1em 0.25em;
+  min-width: 100px;
+  max-width: 100px;
+}
+
+.example-connected {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 2em;
+}
+
+.multi-demo {
+  display: flex;
+  flex-direction: column;
+}
+
+.multi-demo > div {
+  flex: 1;
+  justify-content: center;
+}
+
+.display-3 {
+  font-size: 4em !important;
+}
+.display-4 {
+  font-size: 3em !important;
+}
