@@ -1,7 +1,7 @@
 {
-  "name": "redux-context-provider",
+  "name": "context-hook-provider",
   "version": "1.0.0",
-  "description": "A pattern to move away from connect using hooks",
+  "description": "A pattern proposal to move away from connect using hooks",
   "author": {
     "name": "Joseph Chamochumbi",
     "email": "contact@icjoseph.com",
@@ -17,10 +17,11 @@
     "redux-devtools",
     "redux-hooks"
   ],
-  "repository": "github:icyJoseph/redux-context-provider",
+  "repository": "github:icyJoseph/context-hook-provider",
   "main": "dist/index.js",
   "scripts": {
-    "deploy": "yarn build && surge --domain https://rare-channel.surge.sh --project ./examples/dist",
+    "surge-deploy": "surge --domain https://nondescript-ship.surge.sh --project ./examples/dist",
+    "deploy": "yarn build && yarn surge-deploy",
     "test": "yarn jest ./tests",
     "test:cov": "yarn jest ./tests --collectCoverage",
     "build": "webpack --mode production",

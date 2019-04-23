@@ -16,7 +16,7 @@ export function Main() {
           <Button
             color="primary"
             tag="a"
-            href="https://github.com/icyJoseph"
+            href="https://github.com/icyJoseph/context-hook-provider"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -25,7 +25,7 @@ export function Main() {
           <Button
             color="info"
             tag="a"
-            href="https://www.npmjs.com/~icyjoseph"
+            href="https://www.npmjs.com/package/context-hook-provider"
             target="_blank"
             rel="noopener noreferrer"
           >

@@ -42,7 +42,7 @@ export default Provider;
 
 export const ProviderUsage = `import React from 'react';
 import { createStore } from 'redux';
-import { Provider } from 'redux-context-provider';
+import { Provider } from 'context-hook-provider';
 // import reducer and other components
 
 const store = createStore(reducer);
