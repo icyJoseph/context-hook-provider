@@ -1,8 +1,22 @@
-# redux-context-provider
+# context-hook-provider
 
 A pattern proposal.
 
-The aim is to stop using connect. Instead, we should `useContext` and create hooks to the redux store.
+The aim is to stop using connect. Instead, we should `useContext` and create hooks that select from the redux store.
+
+## Install
+
+As usual:
+
+```bash
+yarn add context-hook-provider
+```
+
+or
+
+```bash
+npm install context-hook-provider
+```
 
 ## Usage
 
@@ -12,9 +26,9 @@ As usual, we create a redux store and pass it to the Provider.
 import React from "react";
 import ReactDOM from "react-dom";
 import { createStore } from "redux";
-import { Provider } from "redux-context-provider";
+import { Provider } from "context-hook-provider";
 
-// using createStore from directly from redux
+// using createStore directly from redux
 const store = createStore(reducer); // the regular redux store
 
 ReactDOM.render(
@@ -51,11 +65,11 @@ export function Provider({ store, children }) {
 }
 ```
 
-Then we can easily consume this down the tree. Say for example that `<App>`, has a child called `<Counter>`.
+Then we can easily consume the state. Say for example that `<App>`, has a child called `<Counter>`.
 
 ```jsx
 import React, { useContext } from "react";
-import { State } from "redux-context-provider";
+import { State } from "context-hook-provider";
 
 export function Counter() {
   const {
