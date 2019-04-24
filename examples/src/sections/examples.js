@@ -15,7 +15,7 @@ export const examples = [
   {
     id: "double",
     title: "Connected, but doubles",
-    description: "This counter is using useDoubleCount",
+    description: "This counter is using useDoubleCount.",
     code: useDoubleCountCode,
     Component: Double
   },

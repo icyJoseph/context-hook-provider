@@ -1,18 +1,39 @@
-export const useCountCode = `export function useCount() {
+export const useCountCode = `function useCount() {
   const { state, dispatch } = useContext(State);
   return [state, dispatch];
 }
-`;
 
-export const useDoubleCountCode = `export function useDoubleCount() {
-  const { state, dispatch } = useContext(State);
-  return [state * 2, dispatch];
+function Count() {
+  const [count, dispatch] = useCount();
+  const inc = () => dispatch({ type: INC });
+  const dec = () => dispatch({ type: DEC });
+  return <Counter count={count} inc={inc} dec={dec} />;
 }
 `;
 
-export const useSquaredCountCode = `export function useSquaredCount() {
+export const useDoubleCountCode = `function useDoubleCount() {
+  const { state, dispatch } = useContext(State);
+  return [state * 2, dispatch];
+}
+
+function DoubledCount() {
+  const [count, dispatch] = useDoubleCount();
+  const inc = () => dispatch({ type: INC });
+  const dec = () => dispatch({ type: DEC });
+  return <Counter count={count} inc={inc} dec={dec} />;
+}
+`;
+
+export const useSquaredCountCode = `function useSquaredCount() {
   const { state, dispatch } = useContext(State);
   return [state * state, dispatch];
+}
+
+function SquaredCount() {
+  const [count, dispatch] = useSquaredCount();
+  const inc = () => dispatch({ type: INC });
+  const dec = () => dispatch({ type: DEC });
+  return <Counter count={count} inc={inc} dec={dec} />;
 }
 `;
 
