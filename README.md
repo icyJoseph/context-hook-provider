@@ -4,6 +4,8 @@ A pattern proposal.
 
 The aim is to stop using connect. Instead, we should `useContext` and create hooks that select from the redux store.
 
+Demo [here](https://nondescript-ship.surge.sh/).
+
 ## Install
 
 As usual:
