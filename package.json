@@ -1,6 +1,6 @@
 {
   "name": "context-hook-provider",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A pattern proposal to move away from connect using hooks",
   "author": {
     "name": "Joseph Chamochumbi",
